@@ -2,7 +2,7 @@
 ## 这是H2
 ###### 这是H5
 
-#### 目录{#home}
+#### <span id="home">目录</span>
 
 
 > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
