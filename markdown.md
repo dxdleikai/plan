@@ -64,3 +64,17 @@ Suspendisse id sem consectetuer libero luctus adipiscing.
 ***
 
 [baidu](http://www.baidu.com '点击这里')
+
+![Alt text](/path/to/img.jpg "Optional title")
+
+![this is a pic](/path/to/imag.jpg "title")
+
+Use the `printf()` function.
+
+*single asterisks*
+
+_single underscores_
+
+**double asterisks**
+
+__double underscores__
