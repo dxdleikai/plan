@@ -78,3 +78,9 @@ _single underscores_
 **double asterisks**
 
 __double underscores__
+
+dog | bird | cat
+----|------|----
+foo | foo  | foo
+bar | bar  | bar
+baz | baz  | baz
