@@ -227,7 +227,12 @@ $ git checkout -- <filename>
 
 - 丢弃本地所有改动
 ```
-$ git reset --hard
+$ git reset --hard HEAD
+```
+
+- 回退到历史版本
+```
+$ git reset --hard 0d18e997d6c2f4daf57340de0d18d7e3897f15e1
 ```
 
 ----------
