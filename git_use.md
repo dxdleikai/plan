@@ -279,7 +279,7 @@ $ cat .ssh/id_dsa.pub
 --------------
 
 - 克隆到自己仓库
-![](img/git_fork.png)
+![git fork](img/git_fork.png)
 
 ---------------
 
