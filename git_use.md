@@ -266,6 +266,7 @@ $ git reflog
 $ cd
 $ ssh-keygen
 $ cat .ssh/id_dsa.pub
+```
 
 -------------
 
