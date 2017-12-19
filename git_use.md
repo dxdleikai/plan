@@ -303,4 +303,4 @@ $ cat .ssh/id_dsa.pub
 ### 参考链接
 * [Pro Git(en)](https://git-scm.com/book/en/v2) - git入门必读(英文）
 * [Pro Git(zh)](https://git-scm.com/book/zh/v2) - git入门必读(中文）
-* [Tech Talk](https://www.youtube.com/watch?v=4XpnKHJAok8) - Linus Torvalds on git
+* [Tech Talk](https://www.youtube.com/watch?v=4XpnKHJAok8) - Linux Torvalds on git

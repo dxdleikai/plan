@@ -1,91 +1,135 @@
-# 这是H1
-## 这是H2
-###### 这是H5
+### 标题
 
-<h2 id="home" name="home">目录</h2>
+```
+# 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题
+```
+---------
+
+### 列表
+
+* 无序列表
+在文字前面加上 - 或者 *
+```
+- 文本1
+- 文本2
+- 文本3
+
+```
+
+```
+- 文本1
+- 文本2
+- 文本3
+```
+
+* 有序列表
+```
+1. 文本1
+2. 文本2
+3. 文本3
+```
+---------
+
+### 插入链接
+
+[显示文本](链接地址)
+```
+[简书](http://www.jianshu.com)
+```
+
+---------
+
+### 图片
+
+![](图片链接地址)
+```
+![](http://upload-images.jianshu.io/upload_images/259-0ad0d0bfc1c608b6.jpg
+```
+---------
+
+#### 引用
+在引用的文字前面加上 >
+
+```
+> 一盏灯， 一片昏黄； 一简书， 一杯淡茶。 守着那一份淡定， 品读属于自己的寂寞。 保持淡定， 才能欣赏到最美丽的风景！ 保持淡定， 人生从此不再寂寞。
+```
+最终显示的就是：
+> 一盏灯， 一片昏黄； 一简书， 一杯淡茶。 守着那一份淡定， 品读属于自己的寂寞。 保持淡定， 才能欣赏到最美丽的风景！ 保持淡定， 人生从此不再寂寞。
+
+---------
+
+### 粗体和斜体
+用两个 * 包含一段文本就是粗体的语法，用一个 * 包含一段文本就是斜体的语法。
+
+```
+*一盏灯*， 一片昏黄；**一简书**， 一杯淡茶。 守着那一份淡定， 品读属于自己的寂寞。 保持淡定， 才能欣赏到最美丽的风景！ 保持淡定， 人生从此不再寂寞。
+```
+最终显示的就是下文，其中「一盏灯」是斜体，「一简书」是粗体：
+*一盏灯*， 一片昏黄；**一简书**， 一杯淡茶。 守着那一份淡定， 品读属于自己的寂寞。 保持淡定， 才能欣赏到最美丽的风景！ 保持淡定， 人生从此不再寂寞。
 
 
-> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-> consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-> Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
->
-> Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-> id sem consectetuer libero luctus adipiscing.
+----------
 
->this is block
->haha
+### 代码引用
 
-> This is the first level of quoting.
->
-> > This is nested blockquote.
->
-> Back to the first level
+需要引用代码时，如果引用的语句只有一段，不分行，可以用 ` 将语句包起来。
 
+代码如下：
+```
+`<addr>` element here instead.
+```
 
-> ## 这是一个标题。
->
-> 1.   这是第一行列表项。
-> 2.   这是第二行列表项。
->
-> 给出一些例子代码：
->
->     return shell_exec("echo $input | $markdown_script");
+显示效果如下：
+`<addr>` element here instead.
+如果引用的语句为多行，可以将```置于这段代码的首行和末行。
 
 
-* ths is
-* thisssssss
-* sasdad
- >    asdasdf
+代码如下：
+```
+```javascript
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+```
+```
 
 
-
- 1. 安排
- 2. 计划
-
- *   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-     Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
-     viverra nec, fringilla in, laoreet vitae, risus.
- *   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
-     Suspendisse id sem consectetuer libero luctus adipiscing.
-
-
-*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
-viverra nec, fringilla in, laoreet vitae, risus.
-*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
-Suspendisse id sem consectetuer libero luctus adipiscing.
+显示如下：
+```javascript
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+```
 
 
-*   一列表项包含一个列表区块：
+----------
 
-        <代码写在这>
+### 表格
+相关代码：
+```
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+```
+显示效果：
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
-        retur false;
+---------
 
 
-***
-
-[baidu](http://www.baidu.com '点击这里')
-
-![Alt text](/path/to/img.jpg "Optional title")
-
-![this is a pic](/path/to/imag.jpg "title")
-
-Use the `printf()` function.
-
-*single asterisks*
-
-_single underscores_
-
-**double asterisks**
-
-__double underscores__
-
-dog | bird | cat
-----|------|----
-foo | foo  | foo
-bar | bar  | bar
-baz | baz  | baz
-
-[目录](#home)
-<a href="#home">目录</a>
+###
