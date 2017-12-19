@@ -1,4 +1,4 @@
-% Git基本操作入门
+## Git基本操作入门
 
 ----------
 
@@ -55,7 +55,7 @@ $ touch README.md
 $ git init
 $ git add README.md
 $ git commit -m "first commit"
-$ git remote add origin root@192.168.1.230:bravo_dev/dev_docs.git
+$ git remote add origin https://github.com/dxdleikai/plan.git
 $ git push -u origin master
 ```
 
