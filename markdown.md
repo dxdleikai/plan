@@ -22,9 +22,9 @@
 ```
 
 ```
-- 文本1
-- 文本2
-- 文本3
+* 文本1
+* 文本2
+* 文本3
 ```
 
 * 有序列表
@@ -39,7 +39,7 @@
 
 [显示文本](链接地址)
 ```
-[简书](http://www.jianshu.com)
+[显示文本](http://www.xianshiwenben.com)
 ```
 
 ---------
@@ -69,7 +69,10 @@
 ```
 *一盏灯*， 一片昏黄；**一简书**， 一杯淡茶。 守着那一份淡定， 品读属于自己的寂寞。 保持淡定， 才能欣赏到最美丽的风景！ 保持淡定， 人生从此不再寂寞。
 ```
+
 最终显示的就是下文，其中「一盏灯」是斜体，「一简书」是粗体：
+
+
 *一盏灯*， 一片昏黄；**一简书**， 一杯淡茶。 守着那一份淡定， 品读属于自己的寂寞。 保持淡定， 才能欣赏到最美丽的风景！ 保持淡定， 人生从此不再寂寞。
 
 
@@ -85,23 +88,29 @@
 ```
 
 显示效果如下：
+
+
 `<addr>` element here instead.
+
+
 如果引用的语句为多行，可以将```置于这段代码的首行和末行。
 
 
 代码如下：
-```
-```javascript
-function fancyAlert(arg) {
-  if(arg) {
-    $.facebox({div:'#foo'})
-  }
-}
-```
-```
 
+
+>
+> ```javascript
+> function fancyAlert(arg) {
+>   if(arg) {
+>     $.facebox({div:'#foo'})
+>   }
+> }
+> ```
 
 显示如下：
+
+
 ```javascript
 function fancyAlert(arg) {
   if(arg) {
@@ -114,7 +123,9 @@ function fancyAlert(arg) {
 ----------
 
 ### 表格
+
 相关代码：
+
 ```
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
@@ -122,7 +133,10 @@ function fancyAlert(arg) {
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 ```
+
+
 显示效果：
+
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |
