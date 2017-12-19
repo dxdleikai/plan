@@ -61,7 +61,7 @@ $ git push -u origin master
 
 --------
 
-### 签出仓库
+### 检出仓库
 - 本地仓库
 ```
 $ git clone /path/to/repository
@@ -261,30 +261,40 @@ $ git reflog
 
 -------------
 
+### ssh 签名
+```
+$ cd
+$ ssh-keygen
+$ cat .ssh/id_dsa.pub
+
+-------------
+
 ### 开始使用
 - [注册帐号](https://github.com/)
 - 权限申请, ssh key导入
+
+![](img/git_ssh_key.png)
 
 
 --------------
 
 - 克隆到自己仓库
-![]()
+![](img/git_fork.png)
 
 ---------------
 
-![]()
+![](img/git_fork_ok.png)
 
 ---------------
 
 - 修改和提交到自己的仓库
-![](../docs_imgs/git_your_repo.png)
+![](img/git_yourself.png)
 
 ---------------
 
 - 页面提交pull request
 - CR通过后，合并到远端服务器
-![](../docs_imgs/git_pull_req.png)
+![](img/git_request.png)
 
 
 
