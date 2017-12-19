@@ -281,12 +281,9 @@ $ cat .ssh/id_dsa.pub
 
 - 克隆到自己仓库
 ![git fork](img/git_fork.png)
-
----------------
-
 ![](img/git_fork_ok.png)
-
 ---------------
+
 
 - 修改和提交到自己的仓库
 ![](img/git_yourself.png)
@@ -294,9 +291,11 @@ $ cat .ssh/id_dsa.pub
 ---------------
 
 - 页面提交pull request
-- CR通过后，合并到远端服务器
 ![](img/git_request.png)
 
+---------------
+
+- CR通过后，合并到远端服务器
 
 
 -----------
