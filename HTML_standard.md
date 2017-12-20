@@ -164,5 +164,3 @@ button 元素的默认 type 为 submit，如果被置于 form 元素中，点击
 <button type="submit">提交</button>
 <button type="button">取消</button>
 ```
-
-
