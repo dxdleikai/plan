@@ -89,25 +89,19 @@
 
 显示效果如下：
 
-
 `<addr>` element here instead.
-
 
 如果引用的语句为多行，可以将```置于这段代码的首行和末行。
 
-
 代码如下：
 
-
->
->
-> \`\`\`javascript
-> function fancyAlert(arg) {
->    if(arg) {
->         $.facebox({div:'#foo'})
->     }
-> }
-> \`\`\`
+\`\`\`javascript
+ function fancyAlert(arg) {
+    if(arg) {
+         $.facebox({div:'#foo'})
+     }
+ }
+\`\`\`
 
 显示如下：
 
@@ -164,3 +158,6 @@ function fancyAlert(arg) {
 
     ---------------------------------------
 ```
+
+参考资料：[](http://www.jianshu.com/p/q81RER)
+参考资料：[](https://www.appinn.com/markdown/)
