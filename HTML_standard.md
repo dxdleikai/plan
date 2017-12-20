@@ -149,6 +149,8 @@ label 的 for 属性指向控件的 id。
 <label for="username">用户名：</label> <input type="textbox" name="username" id="username">
 ```
 
+-------------------
+
 #### 4.2 按钮
 
 
@@ -164,3 +166,5 @@ button 元素的默认 type 为 submit，如果被置于 form 元素中，点击
 <button type="submit">提交</button>
 <button type="button">取消</button>
 ```
+
+-----------------------
