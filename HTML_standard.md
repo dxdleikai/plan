@@ -37,8 +37,7 @@
 常见无需自闭合标签有input、br、img、hr等。
 
 示例：
-
-```
+```html
 <!-- good -->
 <input type="text" name="title">
 <!-- bad -->
@@ -58,8 +57,7 @@
 [建议] 布尔类型的属性，建议不添加属性值。
 
 示例：
-
-```
+```html
 <input type="text" disabled>
 <input type="checkbox" value="1" checked>
 ```
@@ -76,8 +74,7 @@
 [强制] 引入 CSS 时必须指明 rel="stylesheet"。
 
 示例：
-
-```
+```html
 <link rel="stylesheet" src="page.css">
 ```
 
@@ -132,18 +129,13 @@ text/css 和 text/javascript 是 type 的默认值。
 [强制] 有文本标题的控件必须使用 label 标签将其与其标题相关联。
 
 解释：
-
-有两种方式：
-
-将控件置于 label 内。
-
-label 的 for 属性指向控件的 id。
-
-推荐使用第一种，减少不必要的 id。如果 DOM 结构不允许直接嵌套，则应使用第二种。
+* 有两种方式：
+* 将控件置于 label 内。
+* label 的 for 属性指向控件的 id。
+* 推荐使用第一种，减少不必要的 id。如果 DOM 结构不允许直接嵌套，则应使用第二种。
 
 示例：
-
-```
+```html
 <label><input type="checkbox" name="confirm" value="on"> 我已确认上述条款</label>
 <label for="username">用户名：</label> <input type="textbox" name="username" id="username">
 ```
@@ -160,8 +152,7 @@ label 的 for 属性指向控件的 id。
 button 元素的默认 type 为 submit，如果被置于 form 元素中，点击后将导致表单提交。为显示区分其作用方便理解，必须给出 type 属性。
 
 示例：
-
-```
+```html
 <button type="submit">提交</button>
 <button type="button">取消</button>
 ```

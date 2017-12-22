@@ -4,12 +4,12 @@
 
 ### 安装客户端
 - mac
-```
+``` 
 $ brew install git
 ```
 
 - CentOS
-```
+``` 
 $ yum install git
 ```
 
@@ -22,12 +22,12 @@ $ apt-get install git
 
 ### 配置
 - 用户名
-```
+``` 
 $ git config [--global] user.name "[name]"
 $ git config [--global] user.email "[email address]"
 ```
 - 快捷键
-```
+``` 
 $ git config --global alias.co checkout
 $ git config --global alias.br branch
 $ git config --global alias.ci commit
@@ -49,7 +49,7 @@ $ git config --global alias.st status
 
 
 ### 创建新仓库
-```
+``` 
 $ cd your_work_space
 $ touch README.md
 $ git init
@@ -63,12 +63,12 @@ $ git push -u origin master
 
 ### 检出仓库
 - 本地仓库
-```
+``` 
 $ git clone /path/to/repository
-```
+``` 
 - 远端仓库
 如仓库在github, 可以查询具体的路径
-```
+``` 
 $ git clone username@host:/path/to/repository
 ```
 
@@ -76,12 +76,12 @@ $ git clone username@host:/path/to/repository
 
 ### 添加和提交
 - 将改动内容添加到缓存区，这和svn用法稍微有点不同
-```
+``` 
 $ git add your_modify_file
 ```
 
 - 提交改动到本地仓库
-```
+``` 
 $ git commit -m "What's the issue to fix"
 ```
 
@@ -89,15 +89,15 @@ $ git commit -m "What's the issue to fix"
 
 ### 推送修改
 - 推动改动到远端仓库，master可以换为任何分支
-```
+``` 
 $ git push origin master
-```
+```  
 - 添加远端仓库, 将改动推送到这个仓库
-```
+``` 
 $ git push origin master
 ```
 - 上传本地指定分支到远程仓库
-```
+``` 
 $ git push [remote] [branch]
 ```
 
@@ -106,11 +106,11 @@ $ git push [remote] [branch]
 ### 创建分支
 
 1. 创建一个名为"feature_x"的分支，并切换过去：
-```
+``` 
 $ git checkout -b feature_x
-```
+``` 
 2. 切回主分支：
-```
+``` 
 $ git checkout master
 ```
 
@@ -121,7 +121,7 @@ $ git checkout [branch]
 ```
 
 4. 将分支推送到远端仓库, 不推送该分支，就仅自己所见
-```
+``` 
 $ git push origin branch
 ```
 
@@ -129,22 +129,22 @@ $ git push origin branch
 
 ### 分支查询
 
-```
+``` 
 $ git branch -d feature_x
 ```
 5. 列出所有本地分支
 
-```
+``` 
 $ git branch
 ```
 6. 列出所有远端分支
 
-```
+``` 
 $ git branch -r
 ```
 7. 列出所有本地和远端分支
 
-```
+``` 
 $ git branch -a
 ```
 
@@ -153,12 +153,12 @@ $ git branch -a
 ### 更新
 
 - 下载远程仓库的所有变动
-```
+``` 
 $ git fetch [remote]
 ```
 
 - 更新本地仓库到最新改动
-```
+``` 
 $ git pull
 ```
 在你的工作目录中获取（fetch）并合并（merge）远端的改动。
@@ -179,12 +179,12 @@ $ git merge [branch]
 
 - 修改完冲突后，需要加入改动
 
-```
+``` 
 $ git add your_modify_fle
 ```
 
 - 上传本地指定分支到远程仓库
-```
+``` 
 $ git push [remote] [branch]
 ```
 

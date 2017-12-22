@@ -15,8 +15,7 @@
 [强制] 选择器 与 { 之间必须包含空格。
 
 示例：
-
-```
+``` 
 .selector {
 }
 ```
@@ -24,16 +23,14 @@
 [强制] 属性名 与之后的 : 之间不允许包含空格， : 与 属性值 之间必须包含空格。
 
 示例：
-
-```
+``` 
 margin: 0;
 ```
 
 [强制] 列表型属性值 书写在单行时，, 后必须跟一个空格。
 
 示例：
-
-```
+``` 
 font-family: Arial, sans-serif;
 ```
 
@@ -50,8 +47,7 @@ font-family: Arial, sans-serif;
 [建议] 对于超长的样式，在样式值的 空格 处或 , 后换行，建议按逻辑分组。
 
 示例：
-
-```
+``` 
 /* 不同属性值按逻辑分组 */
 background:
     transparent url(aVeryVeryVeryLongUrlIsPlacedHere)
@@ -75,8 +71,7 @@ background:
 [强制] 当一个 rule 包含多个 selector 时，每个选择器声明必须独占一行。
 
 示例：
-
-```
+``` 
 /* good */
 .post,
 .page,
@@ -93,8 +88,7 @@ background:
 [强制] >、+、~ 选择器的两边各保留一个空格。
 
 示例：
-
-```
+``` 
 /* good */
 main > nav {
     padding: 10px;
@@ -124,8 +118,7 @@ input:checked~button {
 [强制] 属性定义必须另起一行。
 
 示例：
-
-```
+``` 
 /* good */
 .selector {
     margin: 0;
@@ -136,9 +129,8 @@ input:checked~button {
 ````
 
 [强制] 属性定义后必须以分号结尾。
-
 示例：
-```
+``` 
 /* good */
 .selector {
     margin: 0;
@@ -164,8 +156,7 @@ input:checked~button {
 在性能和维护性上，都有一定的影响。
 
 示例：
-
-```
+``` 
 /* good */
 #error,
 .danger-message {
@@ -182,8 +173,7 @@ p.danger-message {
 [建议] 选择器的嵌套层级应不大于 3 级，位置靠后的限定条件应尽可能精确。
 
 示例：
-
-```
+``` 
 /* good */
 #username input {
 }
@@ -204,20 +194,14 @@ p.danger-message {
 [建议] 同一 rule set 下的属性在书写时，应按功能进行分组，并以 Formatting Model（布局方式、位置） > Box Model（尺寸） > Typographic（文本相关） > Visual（视觉效果） 的顺序书写，以提高代码的可读性。
 
 解释：
-
-Formatting Model 相关属性包括：position / top / right / bottom / left / float / display / overflow 等
-
-Box Model 相关属性包括：border / margin / padding / width / height 等
-
-Typographic 相关属性包括：font / line-height / text-align / word-wrap 等
-
-Visual 相关属性包括：background / color / transition / list-style 等
-
-另外，如果包含 content 属性，应放在最前面。
+* Formatting Model 相关属性包括：position / top / right / bottom / left / float / display / overflow 等
+* Box Model 相关属性包括：border / margin / padding / width / height 等
+* Typographic 相关属性包括：font / line-height / text-align / word-wrap 等
+* Visual 相关属性包括：background / color / transition / list-style 等
+* 另外，如果包含 content 属性，应放在最前面。
 
 示例：
-
-```
+``` 
 .sidebar {
     /* formatting model: positioning schemes / offsets / z-indexes / display / ...  */
     position: absolute;
@@ -253,8 +237,7 @@ Visual 相关属性包括：background / color / transition / list-style 
 [强制] 当数值为 0 - 1 之间的小数时，省略整数部分的 0。
 
 示例：
-
-```
+``` 
 /* good */
 panel {
     opacity: .8
@@ -273,8 +256,7 @@ panel {
 [强制] url() 函数中的路径不加引号。
 
 示例：
-
-```
+``` 
 body {
     background: url(bg.png);
 }
@@ -287,8 +269,7 @@ body {
 [强制] 长度为 0 时须省略单位。 (也只有长度单位可省)
 
 示例：
-
-```
+``` 
 /* good */
 body {
     padding: 0 5px;
@@ -313,8 +294,7 @@ body {
 标准属性放在最后，按冒号对齐方便阅读，也便于在编辑器内进行多行编辑。
 
 示例：
-
-```
+``` 
 .box {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
