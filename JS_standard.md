@@ -15,7 +15,7 @@
 
 示例：
 
-```
+```javascript
 // good
 switch (variable) {
     case '1':
@@ -51,7 +51,7 @@ default:
 
 示例：
 
-```
+```javascript
 var a = !arr.length;
 a++;
 a = b + c;
@@ -62,7 +62,7 @@ a = b + c;
 
 示例：
 
-```
+```javascript
 // good
 if (condition) {
 }
@@ -84,7 +84,7 @@ function funcName(){
 
 示例：
 
-```
+```javascript
 // good
 if (condition) {
 }
@@ -108,7 +108,7 @@ while(condition) {
 
 示例：
 
-```
+```javascript
 // good
 var obj = {
     a: 1,
@@ -128,7 +128,7 @@ var obj = {
 
 示例：
 
-```
+```javascript
 // good
 function funcName() {
 }
@@ -148,7 +148,7 @@ funcName ();
 
 示例：
 
-```
+```javascript
 // goodcallFunc(a, b);
 // badcallFunc(a , b) ;
 ```
@@ -158,7 +158,7 @@ funcName ();
 
 示例：
 
-```
+```javascript
 // good
 callFunc(param1, param2, param3);
 save(this.list[this.indexes[i]]);
@@ -189,7 +189,7 @@ while ( len-- ) {
 
 示例：
 
-```
+```javascript
 // good
 var arr1 = [];
 var arr2 = [1, 2, 3];
@@ -217,7 +217,6 @@ var obj3 = {name: 'obj', age: 20, sex: 1};
 
 [强制] 每个独立语句结束后必须换行。
 
-
 [强制] 每行不得超过 120 个字符。
 
 解释：
@@ -229,7 +228,7 @@ var obj3 = {name: 'obj', age: 20, sex: 1};
 
 示例：
 
-```
+```javascript
 // good
 if (user.isAuthenticated()
     && user.isInRole('admin')
@@ -257,7 +256,7 @@ var result = number1 + number2 + number3 +
 
 示例：
 
-```
+```javascript
 // good
 var obj = {
     a: 1,
@@ -288,7 +287,7 @@ foo(
 
 示例：
 
-```
+```javascript
 // 仅为按逻辑换行的示例，不代表setStyle的最优实现function setStyle(element, property, value) {
     if (element == null) {
         return;
@@ -302,7 +301,8 @@ foo(
 [建议] 在语句的行长度超过 120 时，根据逻辑条件合理缩进。
 
 示例：
-```
+
+```javascript
 // 较复杂的逻辑条件组合，将每个条件独立一行，逻辑运算符放置在行首进行分隔，或将部分逻辑按逻辑组合进行分隔。// 建议最终将右括号 )
 与左大括号 { 放在独立一行，保证与 if 内语句块能容易视觉辨识。
 if (user.isAuthenticated()
@@ -389,7 +389,7 @@ var array = [
 
 示例：
 
-```
+```javascript
 if (condition) {
     // some statements;
 }else {
@@ -414,7 +414,7 @@ try {
 [强制] 在 if / else / for / do / while 语句中，即使只有一行，也不得省略块 {...}。
 
 示例：
-```
+```javascript
 // good
 if (condition) {
     callFunc();
@@ -428,7 +428,7 @@ if (condition) callFunc();if (condition)
 [强制] 函数定义结束不允许添加分号。
 
 示例：
-```
+```javascript
 // good
 function funcName() {
 }
@@ -451,7 +451,7 @@ IIFE = Immediately-Invoked Function Expression.
 
 示例：
 
-```
+```javascript
 // good
 var task = (function () {
    // Code
@@ -479,7 +479,7 @@ var func = (function () {
 
 示例：
 
-```
+```javascript
 var loadingModules = {};
 ```
 
@@ -488,7 +488,7 @@ var loadingModules = {};
 
 示例：
 
-```
+```javascript
 var HTML_ENTITY = {};
 ```
 
@@ -497,7 +497,7 @@ var HTML_ENTITY = {};
 
 示例：
 
-```
+```javascript
 function stringFormat(source) {
 }
 ```
@@ -507,7 +507,7 @@ function stringFormat(source) {
 
 示例:
 
-```
+```javascript
 function hear(theBells) {
 }
 ```
@@ -517,7 +517,7 @@ function hear(theBells) {
 
 示例：
 
-```
+```javascript
 function TextNode(options) {
 }
 ```
@@ -527,7 +527,7 @@ function TextNode(options) {
 
 示例：
 
-```
+```javascript
 function TextNode(value, engine) {
     this.value = value;
     this.engine = engine;
@@ -542,7 +542,7 @@ TextNode.prototype.clone = function () {
 
 示例：
 
-```
+```javascript
 function XMLParser() {
 }
 function insertHTML(element, html) {
@@ -555,7 +555,7 @@ var httpRequest = new HTTPRequest();
 
 示例：
 
-```
+```javascript
 function Engine(options) {
 }
 ```
@@ -565,7 +565,7 @@ function Engine(options) {
 
 示例：
 
-```
+```javascript
 function getStyle(element) {
 }
 ```
@@ -575,7 +575,7 @@ function getStyle(element) {
 
 示例：
 
-```
+```javascript
 var isReady = false;var hasMoreCommands = false;
 ```
 
@@ -584,7 +584,7 @@ var isReady = false;var hasMoreCommands = false;
 
 示例：
 
-```
+```javascript
 var loadingData = ajax.get('url');
 loadingData.then(callback);
 ```
@@ -615,24 +615,15 @@ loadingData.then(callback);
 [强制] 为了便于代码阅读和自文档化，以下内容必须包含以 /**...*/ 形式的块注释中。
 
 解释：
-
-文件
-
-namespace
-
-类
-
-函数或方法
-
-类属性
-
-事件
-
-全局变量
-
-常量
-
-AMD 模块
+* 文件
+* namespace
+* 类
+* 函数或方法
+* 类属性
+* 事件
+* 全局变量
+* 常量
+* AMD 模块
 
 [强制] 文档注释前必须空一行。
 
@@ -654,179 +645,355 @@ AMD 模块
 
 [强制] 对于基本类型 {string}, {number}, {boolean}，首字母必须小写。
 
-| 类型定义            | 语法示例          |                |
-| :------------------: | :----------------: | :--------------: |
+| 类型定义         | 语法示例                            |  解释     						           |
+| --------------- | ----------------------------------- | ----------------------------------------- |
+| String          |  {string}                           | --         						           |  
+| Number          |  {number}                           | --            						       |  
+| Boolean         |  {boolean}                          | --    						               | 
+| Object          |  {Object}                           | --                                        |      
+| Function        |  {Function}                         | --                                        |              
+| RegExp          |  {RegExp}                           | --                                        |               
+| Array           |  {Array}                            | --                                        |       
+| Date            |  {Date}                             | --                                        |  
+| 单一类型集合     |  {Array.<string>}                   | string 类型的数组                          |  
+| 多类型           |  {(number｜boolean)}               | 可能是 number 类型, 也可能是 boolean 类型    | 
+| 允许为null       |  {?number}                         | 可能是 number, 也可能是 null                |  
+| 不允许为null     | {!Object}                          | Object 类型, 但不是 null                    |
+| Function类型     | {function(number, boolean)}        | 函数, 形参类型                              |
+| Function带返回值 | {function(number, boolean):string} | 函数, 形参, 返回值类型                       | 
+| 参数可选         | @param {string=} name              | 可选参数, =为类型后缀                        |
+| 可变参数         | @param {...number} args            | 变长参数, ...为类型前缀                      |
+| 任意类型         | {*}                                | 任意类型                                    |
+| 可选任意类型     | @param {*=} name                    | 可选参数，类型不限                          |
+| 可变任意类型     | @param {...*} args                  | 变长参数，类型不限                          |
+        
+#### 1.3.5 注释
+  
+[强制] 有时我们会使用一些特殊标记进行说明。特殊标记必须使用单行注释的形式。下面列举了一些常用标记：
+
+解释：
+* TODO: 有功能待实现。此时需要对将要实现的功能进行简单说明。
+* FIXME: 该处代码运行没问题，但可能由于时间赶或者其他原因，需要修正。此时需要对如何修正进行简单说明。
+* HACK: 为修正某些问题而写的不太好或者使用了某些诡异手段的代码。此时需要对思路或诡异手段进行描述。
+* XXX: 该处存在陷阱。此时需要对陷阱进行描述。
+      
 
 --------------
 
-## 2 通用
+## 2 语言特性
 
 
-### 2.1 选择器
+### 2.1 变量
 
-[强制] 如无必要，不得为 id、class 选择器添加类型选择器进行限定。
+[强制] 每个 var 只能声明一个变量。
 
 解释：
 
-在性能和维护性上，都有一定的影响。
+一个 var 声明多个变量，容易导致较长的行长度，并且在修改时容易造成逗号和分号的混淆。
 
 示例：
 
-```
-/* good */
-#error,
-.danger-message {
-    font-color: #c00;
-}
-/* bad */
-dialog#error,
-p.danger-message {
-    font-color: #c00;
-}
+```javascript
+// good
+var hangModules = [];
+var missModules = [];
+var visited = {};
+// bad
+var hangModules = [],
+    missModules = [],
+    visited = {};
 ```
 
+[强制] 变量必须 即用即声明，不得在函数或其它形式的代码块起始位置统一声明所有变量。
 
-[建议] 选择器的嵌套层级应不大于 3 级，位置靠后的限定条件应尽可能精确。
+解释：
+
+变量声明与使用的距离越远，出现的跨度越大，代码的阅读与维护成本越高。虽然JavaScript的变量是函数作用域，还是应该根据编程中的意图，缩小变量出现的距离空间。
 
 示例：
+```javascript
+// good
+function kv2List(source) {
+    var list = [];
 
-```
-/* good */
-#username input {
+    for (var key in source) {
+        if (source.hasOwnProperty(key)) {
+            var item = {
+                k: key,
+                v: source[key]
+            };
+            list.push(item);
+        }
+    }
+
+    return list;
 }
-.comment .avatar {
-}
-/* bad */
-.page .header .login #username input {
-}
-.comment div * {
+// badfunction kv2List(source) {
+    var list = [];
+    var key;
+    var item;
+
+    for (key in source) {
+        if (source.hasOwnProperty(key)) {
+            item = {
+                k: key,
+                v: source[key]
+            };
+            list.push(item);
+        }
+    }
+
+    return list;
 }
 ```
 
 -------------------
 
 
-### 2.2 属性书写顺序
+### 2.2 条件
 
-[建议] 同一 rule set 下的属性在书写时，应按功能进行分组，并以 Formatting Model（布局方式、位置） > Box Model（尺寸） > Typographic（文本相关） > Visual（视觉效果） 的顺序书写，以提高代码的可读性。
+[强制] 在 Equality Expression 中使用类型严格的 ===。仅当判断 null 或 undefined 时，允许使用 == null。
 
 解释：
 
-Formatting Model 相关属性包括：position / top / right / bottom / left / float / display / overflow 等
-
-Box Model 相关属性包括：border / margin / padding / width / height 等
-
-Typographic 相关属性包括：font / line-height / text-align / word-wrap 等
-
-Visual 相关属性包括：background / color / transition / list-style 等
-
-另外，如果包含 content 属性，应放在最前面。
+使用 === 可以避免等于判断中隐式的类型转换。
 
 示例：
-
-```
-.sidebar {
-    /* formatting model: positioning schemes / offsets / z-indexes / display / ...  */
-    position: absolute;
-    top: 50px;
-    left: 0;
-    overflow-x: hidden;
-
-    /* box model: sizes / margins / paddings / borders / ...  */
-    width: 200px;
-    padding: 5px;
-    border: 1px solid #ddd;
-
-    /* typographic: font / aligns / text styles / ... */
-    font-size: 14px;
-    line-height: 20px;
-
-    /* visual: colors / shadows / gradients / ... */
-    background: #f5f5f5;
-    color: #333;
-    -webkit-transition: color 1s;
-       -moz-transition: color 1s;
-            transition: color 1s;
+```javascript
+// good
+if (age === 30) {
+    // ......
+}
+// bad
+if (age == 30) {
+    // ......
 }
 ```
 
+[建议] 尽可能使用简洁的表达式。
+
+示例：
+```javascript
+// 字符串为空
+// good
+if (!name) {
+    // ......
+}
+// bad
+if (name === '') {
+    // ......
+}
+// 字符串非空
+// good
+if (name) {
+    // ......
+}
+// bad
+if (name !== '') {
+    // ......
+}
+// 数组非空
+// good
+if (collection.length) {
+    // ......
+}
+// bad
+if (collection.length > 0) {
+    // ......
+}
+// 布尔不成立
+// good
+if (!notTrue) {
+    // ......
+}
+// bad
+if (notTrue === false) {
+    // ......
+}
+// null 或 undefined
+// good
+if (noValue == null) {
+  // ......
+}
+// bad
+if (noValue === null || typeof noValue === 'undefined') {
+  // ......
+}
+```
+
+[建议] 按执行频率排列分支的顺序。
+
+解释：
+* 按执行频率排列分支的顺序好处是：
+* 阅读的人容易找到最常见的情况，增加可读性。
+* 提高执行效率。
+
+[建议] 对于相同变量或表达式的多值条件，用 switch 代替 if。
+
+示例：
+```javascript
+// good
+switch (typeof variable) {
+    case 'object':
+        // ......
+        break;
+    case 'number':
+    case 'boolean':
+    case 'string':
+        // ......
+        break;
+}
+// bad
+var type = typeof variable;
+if (type === 'object') {
+    // ......
+} else if (type === 'number' || type === 'boolean' || type === 'string') {
+    // ......
+}
+```
 ----------------
 
-## 3 值与单位
+### 2.3 循环
 
-
-### 3.1数值
-
-[强制] 当数值为 0 - 1 之间的小数时，省略整数部分的 0。
-
-示例：
-
-```
-/* good */
-panel {
-    opacity: .8
-}
-/* bad */
-panel {
-    opacity: 0.8
-}
-
-```
-
----------------------
-
-### 3.2 url()
-
-[强制] url() 函数中的路径不加引号。
-
-示例：
-
-```
-body {
-    background: url(bg.png);
-}
-```
-
---------------------
-
-### 3.3 长度
-
-[强制] 长度为 0 时须省略单位。 (也只有长度单位可省)
-
-示例：
-
-```
-/* good */
-body {
-    padding: 0 5px;
-}
-/* bad */
-body {
-    padding: 0px 5px;
-}
-```
-
-------------------
-
-## 4 兼容性
-
-
-### 4.1 属性前缀
-
-[强制] 带私有前缀的属性由长到短排列，按冒号位置对齐。
+[建议] 对有序集合进行遍历时，缓存 length。
 
 解释：
 
-标准属性放在最后，按冒号对齐方便阅读，也便于在编辑器内进行多行编辑。
+虽然现代浏览器都对数组长度进行了缓存，但对于一些宿主对象和老旧浏览器的数组对象，在每次 length 访问时会动态计算元素个数，此时缓存 length 能有效提高程序性能。
 
 示例：
-
-```
-.box {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+```javacript
+for (var i = 0, len = elements.length; i < len; i++) {
+    var element = elements[i];
+    // ......
 }
 ```
 
-------------------
+[建议] 对有序集合进行顺序无关的遍历时，使用逆序遍历。
+
+解释：
+
+逆序遍历可以节省变量，代码比较优化。
+
+示例：
+```javascript
+var len = elements.length;
+while (len--) {
+    var element = elements[len];
+    // ......
+}
+```
+----------------
+
+### 2.4 类型
+
+#### 2.4.1 类型转换
+
+[建议] 转换成 string 时，使用 + ''。
+
+示例：
+```javacript
+// good
+num + '';
+// bad
+new String(num);
+num.toString();
+String(num);
+```
+
+[建议] 转换成 number 时，通常使用 +。
+
+示例：
+```javacript
+// good
++str;
+// bad
+Number(str);
+```
+
+[建议] number 去除小数点，使用 Math.floor / Math.round / Math.ceil，不使用 parseInt。
+
+示例：
+```javasript
+// good
+var num = 3.14;
+Math.ceil(num);
+// bad
+var num = 3.14;
+parseInt(num, 10);
+```
+-------------------
+
+### 2.5 字符串
+
+[强制] 字符串开头和结束使用单引号 '。
+
+解释：
+* 输入单引号不需要按住 shift，方便输入。
+* 实际使用中，字符串经常用来拼接 HTML。为方便 HTML 中包含双引号而不需要转义写法。
+
+示例：
+```javascript
+var str = '我是一个字符串';
+var html = '<div class="cls">拼接HTML可以省去双引号转义</div>';
+```
+---------------------
+
+### 2.6 对象
+
+[强制] 对象创建时，如果一个对象的所有 属性 均可以不添加引号，则所有 属性 不得添加引号。
+
+示例：
+```javascript
+var info = {
+    name: 'someone',
+    age: 28
+};
+```
+
+[强制] 对象创建时，如果任何一个 属性 需要添加引号，则所有 属性 必须添加 '。
+
+解释：
+
+如果属性不符合 Identifier 和 NumberLiteral 的形式，就需要以 StringLiteral 的形式提供。
+
+示例：
+```javascript
+// good
+
+var info = {
+    'name': 'someone',
+    'age': 28,
+    'more-info': '...'
+};
+// badvar info = {
+    name: 'someone',
+    age: 28,
+    'more-info': '...'
+};
+```
+-----------------
+## 3 浏览器环境
+
+### 3.1  DOM
+#### 3.1.1  DOM 操作
+
+[建议] 操作 DOM 时，尽量减少页面 reflow。
+
+解释：
+
+页面 reflow 是非常耗时的行为，非常容易导致性能瓶颈。下面一些场景会触发浏览器的reflow：
+* DOM元素的添加、修改（内容）、删除。
+* 应用新的样式或者修改任何影响元素布局的属性。
+* Resize浏览器窗口、滚动页面。
+* 读取元素的某些属性（offsetLeft、offsetTop、offsetHeight、offsetWidth、scrollTop/Left/Width/Height、clientTop/Left/Width/Height、getComputedStyle()、currentStyle(in IE)) 。
+
+[建议] 尽量减少 DOM 操作。
+
+解释：
+
+DOM 操作也是非常耗时的一种操作，减少 DOM 操作有助于提高性能。举一个简单的例子，构建一个列表。我们可以用两种方式：
+
+1. 在循环体中 createElement 并 append 到父元素中。
+2. 在循环体中拼接 HTML 字符串，循环结束后写父元素的 innerHTML。
+第一种方法看起来比较标准，但是每次循环都会对 DOM 进行操作，性能极低。在这里推荐使用第二种方法。
